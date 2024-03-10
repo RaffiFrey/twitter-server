@@ -3,6 +3,7 @@ package com.rfrey.twitterserver.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,4 +28,7 @@ public class Tweet {
     private Tweet replyFor;
     private boolean isReply;
     private boolean isTweet;
+    private boolean isLiked;
+    private boolean isRetweeted;
+    private LocalDateTime createdAt;
 }
